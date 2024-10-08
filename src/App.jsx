@@ -1,8 +1,10 @@
+import Home from "./Pages/Home/Home"
+
 function App() {
 
   return (
     <>
-      <p className="text-3xl text-center my-56">Hi this text for testing</p>
+      {/* <Home /> */}
     </>
   )
 }
