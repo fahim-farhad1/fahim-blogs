@@ -6,7 +6,7 @@ const Navbar = () => {
   const [open, isOpen] = useState(false);
   console.log(open);
   return (
-    <div className="bg-white h-12 md:h-16 border md:text-xl">
+    <div className=" h-12 md:h-16 border md:text-xl ">
       <div className="mx-2 md:mx-20 flex justify-between mt-3 md:items-center">
         {open ? (
           <MdClose
@@ -35,7 +35,7 @@ const Navbar = () => {
         <label className="grid cursor-pointer place-items-center">
           <input
             type="checkbox"
-            value="synthwave"
+            value="dark"
             className="toggle theme-controller bg-base-content col-span-2 col-start-1 row-start-1"
           />
           <svg

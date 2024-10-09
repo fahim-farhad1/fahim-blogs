@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* reset code  */
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}

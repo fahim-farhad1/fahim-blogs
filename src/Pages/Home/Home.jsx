@@ -1,11 +1,15 @@
-import React from 'react'
+import bannerImg from "../../assets/1600w-96HZcTYEWQA.webp";
+import RecentBlogPost from "../../Components/Sections/RecentBlogPost";
 
 const Home = () => {
   return (
     <div>
-      <p>This is home page</p>
+      {/* banner start  */}
+      <img className="w-full md:h-[600px]" src={bannerImg} alt="" />
+      {/* banner end  */}
+        <RecentBlogPost />
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
