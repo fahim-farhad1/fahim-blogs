@@ -23,7 +23,7 @@ const LargeBlogCard = ({title,content,author,datePublished,tags,readingTime}) =>
         </span>
 
         <p className="md:text-lg">{content}</p>
-       <span className="flex  gap-2">
+       <span className="flex gap-3 md:gap-6">
        {
           tags.map((tag) =>(
             <p className="text-[#027A48]  md:text-lg font-semibold">{tag}</p>
