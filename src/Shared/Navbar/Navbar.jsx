@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { FaListUl } from "react-icons/fa";
 import { MdClose } from "react-icons/md";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [open, isOpen] = useState(false);
@@ -23,14 +24,16 @@ const Navbar = () => {
           Fahim <span className="text-[#6941C6]">Blog</span>
         </p>
         <ul
-          className={` duration-300 w-32 p-2 h-full  md:flex items-center gap-5 mt-[33px] md:mt-0 ${
+          className={` duration-300 w-32 p-2 h-full flex flex-col  md:flex md:flex-row md:items-center md:gap-5 mt-[33px] md:mt-0 ${
             open ? "-ml-[10px] space-y-3 bg-gray-100 border" : "-ml-[150px]"
           } absolute md:static `}
         >
-          <li>Home</li>
-          <li>Blogs</li>
-          <li>About</li>
-          <li>Category</li>
+          {/* <li>Home</li> */}
+          <Link to={'/'}>Home</Link>
+          <Link to={'blog'}>Blog</Link>
+          <Link to={'about'}>About</Link>
+
+
         </ul>
         <label className="grid cursor-pointer place-items-center">
           <input
